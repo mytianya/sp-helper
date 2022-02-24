@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/mytianya/sp-helper#readme",
   "dependencies": {
+    "dayjs": "^1.10.7",
     "js-cookie": "^3.0.1"
   }
 }
