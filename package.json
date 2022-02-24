@@ -1,0 +1,32 @@
+{
+  "name": "sp-helper",
+  "version": "1.0.0",
+  "description": "common utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mytianya/sp-helper.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^5.5.0",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "author": "dsys <dsys@163.com> (http://www.codehome.vip/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mytianya/sp-helper/issues"
+  },
+  "homepage": "https://github.com/mytianya/sp-helper#readme",
+  "dependencies": {
+    "js-cookie": "^3.0.1"
+  }
+}
