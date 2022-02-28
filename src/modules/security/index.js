@@ -1,4 +1,5 @@
 import CryptoJS from 'crypto-js'
+import JSEncrypt  from 'jsencrypt'
 export function md5(str){
     return CryptoJS.MD5(str).toString()
 }
@@ -29,4 +30,14 @@ export function aesDecrypt(text,secret,ivstr){
     let decrypt = CryptoJS.AES.decrypt(srcs, key, { iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 });
     let decryptedStr = decrypt.toString(CryptoJS.enc.Utf8);
     return decryptedStr.toString();
+}
+export function rsaEncrypt(text,publicKey){
+    let jse=new JSEncrypt();
+    jse.setPublicKey(publicKey);
+    return jse.encrypt(text);
+}
+export function rsaDecrypt(text,privateKey){
+    let jse=new JSEncrypt();
+    jse.setPrivateKey(privateKey);
+    return jse.decrypt(text);
 }
